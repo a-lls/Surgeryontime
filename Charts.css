@@ -1,0 +1,37 @@
+/* Change the font-style in all document*/
+* {
+    font-family: "Tahoma";
+}
+
+/* Put images side by side*/
+.column {
+    display: inline-grid;
+}
+
+/* Imagem no canto direito*/
+#logo {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+}
+
+/* Alterarr tamanho de letra por ID */
+#specialty {
+    font-size: 14px;
+    font-family: "Tahoma";
+}
+
+#numbers {
+    font-size: 14px;
+    font-family: "Tahoma";
+}
+
+#label1 {
+    font-size: 16px;
+    font-family: "Tahoma";
+}
+
+#label2 {
+    font-size: 16px;
+    font-family: "Tahoma";
+}

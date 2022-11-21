@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Charts.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="row">
+        <div class="column">
+            <img src="SOT.png" alt="SOT logo" width="150px">
+        </div>
+        <div class="column" id="logo">
+            <img src="lean.png" alt="SOT logo" width="150px">
+        </div>
+    </div>
+
+    <br>
+    <div class="container">
+        <div id="chartContainer" style="height: 300px; width: 100%;"></div>
+    </div>
+
+    <br> <br>
+    <form>
+        <label for="numbers" style="font-family: Tahoma" style="height: 300px" id="label1">
+            Number of Surgeries:
+        </label>
+        <input type="number" id="numbers" onchange="getSpecialtyValues()" />
+        <br>
+        <br>
+        <br>
+
+        <label for="specialty" size="20px" style="font-family: Tahoma" id="label2">
+            Choose a Specialty:
+        </label>
+
+        <select name="specialty" id="specialty" onchange="getSpecialtyValues()">
+            <option value="UROLOGY" style="font-family: Tahoma">Urology</option>
+            <option value="GENERAL_SURGERY" style="font-family: Tahoma">General Surgery</option>
+            <option value="ORTHOPEDICS" style="font-family: Tahoma">Orthopedics</option>
+        </select>
+
+    </form>
+    <script src="Charts.js"></script>
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+</body>
+
+</html>
